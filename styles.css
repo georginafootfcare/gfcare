@@ -1,4 +1,4 @@
-/*Framework v1.01 ewacs 2025-04-03 */
+/*Framework v1.01 GFcare 2025-06-15  for holding page*/
     /* montserrat-regular - latin */
     @font-face {
       font-display: swap;
@@ -37,12 +37,14 @@
         color: #000000;
         padding: 20px;
         display: flex;
-        justify-content: space-between;
+        /*justify-content: space-between; holding page */
+        justify-content: center; 
         align-items: center;
     }
 
     header .logo {
-        margin-left: 20px;
+        /*margin-left: 20px; default*/
+
     }
 
     header .strapline {
