@@ -1,4 +1,5 @@
-/*Framework v1.01dev GFcare 2025-06-21 */
+/*Framework v1.03  GFcare 2025-06-28 */
+/* Single column for boxed content if only 1 or 2 boxes */
     /* montserrat-regular - latin */
     @font-face {
       font-display: swap;
@@ -35,10 +36,13 @@
     header {
         background-color: #FFFFF0;
         color: #000000;
-        padding: 20px;
+        padding: 10px 0 0 ;             /* Small top padding */
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-between; /* Horizontal spacing */
+        align-items: center;            /* Center items vertically */
+        max-width: 900px;               /* Single boxed content */
+        margin: 0 auto;                 /* Center container horizontally */
+
     }
 
     header .logo {
@@ -64,14 +68,16 @@
 
     nav {
         display: flex;
-        justify-content: center;
         background-color:lightblue;
-        padding: 10px;
+        justify-content: center;    /*Horizontal spacing */
+        padding: 10px 0px;          /* Top and Bottom */
+        max-width: 900px;           /* Single column boxed content */
+        margin: 0 auto;             /* Center container horizontally */
     }
     nav a {
         color: #000000;
-        padding: 0 15px;
-        text-decoration: none;
+        padding: 0 15px;            /* Top and Bottom */
+        text-decoration: none;      /* Remove underline */
         font-weight: bold;
     }
     nav a:hover {
@@ -82,30 +88,29 @@
         display: flex;
         flex-direction: column;
         align-items: center; /* Center items horizontally */
-        gap: 20px;
-    }
-
-    .hero-image {
-        display: flex;
-        justify-content: center;
-        position: relative; /* Needed for absolute positioning */
-        width: 100%; /* Ensure the container takes up the intended space */
-        max-width: 1600px; /* Prevent it from getting too large on big screens */
     }
 
     .hero-image::before {
         content: "";
         display: block;
-        width: 100%; /* Ensures it stretches to container width */
-        padding-top: 25%; /* 4:1 aspect ratio */
-        background: #FFD760; /* Placeholder color */
+        width: 100%;         /* Ensures it stretches to container width */
+        padding-top: 20%;    /* 5:1 aspect ratio */
+        background: #FFFFF0; /* Placeholder color */
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        position: relative;       /* Needed for absolute positioning */
+        width: 100%;              /* Ensure the container takes up the intended space */
+        max-width: 900px;         /* Match nav and header */
     }
 
     .hero-image img {
         display: block;
         width: 100%;
         height: auto;
-        position: absolute;
+        /* position: absolute; /* why? */
         top: 0;
         left: 0;
     }
