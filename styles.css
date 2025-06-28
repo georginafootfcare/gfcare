@@ -101,7 +101,7 @@
     .hero-image {
         display: flex;
         justify-content: center;
-        position: relative;       /* Needed for absolute positioning */
+        position: relative;       /* Allows children to be positioned absolutely to this*/
         width: 100%;              /* Ensure the container takes up the intended space */
         max-width: 900px;         /* Match nav and header */
     }
@@ -110,9 +110,9 @@
         display: block;
         width: 100%;
         height: auto;
-        /* position: absolute; /* why? */
-        top: 0;
-        left: 0;
+        position: absolute; 	/* ensures image fills hero-image container */
+        top: 0;			/* ensures image fills hero-image container */
+        left: 0;		/* ensures image fills hero-image container */
     }
 
     .intro-container {
