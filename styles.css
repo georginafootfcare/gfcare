@@ -1,4 +1,4 @@
-/*Framework v1.03  GFcare 2025-06-28 */
+/*Framework v1.04  GFcare 2025-06-29 */
 /* Single column for boxed content if only 1 or 2 boxes */
     /* montserrat-regular - latin */
     @font-face {
@@ -33,9 +33,38 @@
         background-color: #FFFFF0;
     }
 
+
+    .top-bar {
+        background-color: #FFFFF0;
+        color: black;
+        padding: 10px 0 0;             /* Small top padding */
+        display: flex;
+        justify-content: space-between; /* Horizontal spacing */
+        align-items: center;            /* Center items vertically */
+        max-width: 900px;               /* Single boxed content */
+        margin: 0 auto;                 /* Center container horizontally */
+    }
+
+    .top-bar .phone {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-style: italic;
+        color: #77949C;
+        margin-left: auto;  /* Pushes this flex item to the right */
+        margin-right: 20px; /* Optional right margin */
+        float: none;        /* Remove float, no effect in flex */
+    }
+
+
+    .top-bar .phone:hover {
+        color: darkblue;
+    }
+
+
     header {
         background-color: #FFFFF0;
-        color: #000000;
+        color: black;
         padding: 10px 0 0 ;             /* Small top padding */
         display: flex;
         justify-content: space-between; /* Horizontal spacing */
@@ -52,7 +81,8 @@
     header .strapline {
         text-align: center;
         font-style: italic;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        margin-right: 20px;  /* Push email link 20px away from right edge */
     }
 
     header .mobile-strapline {
@@ -75,13 +105,13 @@
         margin: 0 auto;             /* Center container horizontally */
     }
     nav a {
-        color: #000000;
+        color: black;
         padding: 0 15px;            /* Top and Bottom */
         text-decoration: none;      /* Remove underline */
         font-weight: bold;
     }
     nav a:hover {
-        background-color: #FFFF00;
+        color: blue;
     }        
 
     .hero-container {
@@ -117,6 +147,7 @@
 
     .intro-container {
         display: flex;
+        background-color: #FFFFF0;
         flex-direction: column;
         align-items: center; /* Center items horizontally */
     }        
@@ -128,8 +159,8 @@
         font-size: 1.2em;
         text-align: center;
         /*text-align: left;*/
-        background: white;
-        padding: 20px;
+        /*background: white;*/
+        /*padding: 20px;*/
         box-sizing: border-box;
     }
 
