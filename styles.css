@@ -272,7 +272,7 @@
     }
 
     .cf-turnstile {
-        max-width: 100%; 
+        max-width: 300px; 
         overflow: hidden;
         display: block;
     }
