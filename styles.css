@@ -45,7 +45,7 @@
         margin: 0 auto;                 /* Center container horizontally */
     }
 
-    .top-bar .phone {
+    .top-bar .call {
         text-decoration: none;
         font-size: 1.2rem;
         font-weight: bold;
@@ -57,7 +57,7 @@
     }
 
 
-    .top-bar .phone:hover {
+    .top-bar .call:hover {
         color: darkblue;
     }
 
@@ -226,39 +226,30 @@
         box-sizing: border-box; /* Ensure padding is included in width */
     }
 
-/*End Single contact column*/
-
-
-    h2, h3, h4, h5 {
-        text-align: center;
-    }
-
-    .larger-text {
-      font-size: 1.2em; /* Adjust the size as needed */
-    }
-
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        background-color: lightblue;
-        align-items: center; /* Center items horizontally */
-        gap: 20px;
-    }
-    
-    footer .item-footer {
-        width: 80vw;
-        color: black;
-        text-align: center;
-        padding: 10px;
-    }
-
-    input[type="text"], input[type="email"], input[type="tel"], textarea {
+   input[type="text"], input[type="email"], input[type="tel"], textarea {
         width: 95%;
         padding: 10px;
         margin: 10px 0;
         border: 1px solid #ccc;
     }
+
+    label, input, textarea {
+        display: block; /* force new lines between items*/
+        /*margin-bottom: 10px; /* optional spacing */
+    }
+
+    #email {
+        max-width: 600px;
+    }
+
+    #phone {
+        max-width: 200px;
+    }
+
+    #callback {
+        max-width: 300px;
+    }
+
     button[type="submit"] {
         background-color: #666;
         color: white;
@@ -286,6 +277,8 @@
         display: block;
     }
 
+
+/*End Single contact column*/
 
     @media (max-width: 900px) {
 
@@ -341,3 +334,27 @@
         }
 
     }  
+
+    h2, h3, h4, h5 {
+        text-align: center;
+    }
+
+    .larger-text {
+      font-size: 1.2em; /* Adjust the size as needed */
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: lightblue;
+        align-items: center; /* Center items horizontally */
+        gap: 20px;
+    }
+    
+    footer .item-footer {
+        width: 80vw;
+        color: black;
+        text-align: center;
+        padding: 10px;
+    }
