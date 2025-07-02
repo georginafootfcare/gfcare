@@ -331,11 +331,18 @@
             font-size: 1.0em; /* Adjust the size as needed */
         }
 
+        .top-bar .call {
+            font-size: 1rem;
+        }
+
         header {
             flex-direction: column;
             text-align: center;
             justify-content: center;
          }
+        header .logo {
+            margin-left: 0;
+        }
 
         header .mobile-strapline {
             display: block; /* Show on mobile */
