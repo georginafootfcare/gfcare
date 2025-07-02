@@ -114,6 +114,7 @@
         color: blue;
     }        
 
+/* Hero image */
     .hero-container {
         display: flex;
         flex-direction: column;
@@ -144,6 +145,10 @@
         top: 0;			/* ensures image fills hero-image container */
         left: 0;		/* ensures image fills hero-image container */
     }
+
+/* End hero */
+
+/* Intro */
 
     .intro-container {
         display: flex;
@@ -180,6 +185,8 @@
         display: none;
     }
 
+/* End intro */
+
 /* Multi column */   
     .feature-container {
       display: flex;
@@ -207,9 +214,9 @@
         height: auto;
     }
 
-/*end Multi column */
+/* End multi column */
 
-/*Single contact Column */
+/* Single contact Column */
     .container-contact {
         display: flex;
         flex-direction: column;
@@ -272,13 +279,33 @@
     }
 
     .cf-turnstile {
-        width: 200px; 
         overflow: hidden;
         display: block;
     }
 
 
-/*End Single contact column*/
+/* End Single contact column */
+
+/* Footer */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: lightblue;
+        align-items: center; /* Center items horizontally */
+        gap: 20px;
+    }
+    
+    footer .item-footer {
+        width: 80vw;
+        color: black;
+        text-align: center;
+        padding: 10px;
+    }
+
+/* End footer */
+
+/* Media queries */
 
     @media (max-width: 900px) {
 
@@ -297,6 +324,7 @@
           font-size: 1.1em; /* Adjust the size as needed */
         }         
     } 
+
 
     @media (max-width: 768px) {
         .larger-text {
@@ -333,7 +361,12 @@
             padding:20px;
         }
 
+
+        .cf-turnstile {
+            width: 200px; 
+        }
     }  
+/* end media queries */
 
     h2, h3, h4, h5 {
         text-align: center;
@@ -344,17 +377,4 @@
     }
 
 
-    footer {
-        display: flex;
-        flex-direction: column;
-        background-color: lightblue;
-        align-items: center; /* Center items horizontally */
-        gap: 20px;
-    }
-    
-    footer .item-footer {
-        width: 80vw;
-        color: black;
-        text-align: center;
-        padding: 10px;
-    }
+
